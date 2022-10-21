@@ -32,5 +32,61 @@ public class Program
             string? val = Console.ReadLine();
             numbers.Add(Convert.ToInt32(val));
         }
+
+        // Display all the elements in the collection and the index of the
+        // element
+        Console.WriteLine("Values Entered:");
+        Console.WriteLine("Index\tValue");
+        foreach (int number in numbers)
+        {
+            int index = numbers.IndexOf(number);
+            // Output a formatted, right-aligned string
+            Console.WriteLine(string.Format($"{index,5}\t{number,5}"));
+        }
+
+        Console.WriteLine($"\nSmallest Value: {MinValue(numbers)}");
+        Console.WriteLine($"Largest Value: {MaxValue(numbers)}");
+    }
+
+    // Method to determine the smallest element in the collection
+    public static int MinValue(List<int> numbers)
+    {
+        int smallest = 0;
+
+        foreach (var number in numbers)
+        {
+            if (smallest == 0)
+            {
+                smallest = number;
+            }
+
+            if (number < smallest)
+            {
+                smallest = number;
+            }
+        }
+
+        return smallest;
+    }
+
+    // Method to determine the largest element in the collection
+    public static int MaxValue(List<int> numbers)
+    {
+        int largest = 0;
+
+        foreach (var number in numbers)
+        {
+            if (largest == 0)
+            {
+                largest = number;
+            }
+
+            if (number > largest)
+            {
+                largest = number;
+            }
+        }
+
+        return largest;
     }
 }

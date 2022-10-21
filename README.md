@@ -7,7 +7,6 @@ The main application class must meet the following requirements
 - Write a method to determine the smallest element in the collection
 - Write a method to determine the largest element in the collection
 - Display the following information for the collection
-  - All the elements in the collection and the index of the element (displayed
-    in columns as shown in the example below)
+  - All the elements in the collection and the index of the element
   - The smallest element in the collection
   - The largest element in the collection
