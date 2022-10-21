@@ -21,5 +21,16 @@ public class Program
     {
         // Print a header line
         Console.WriteLine("\nJason D'Oyley - Midterm Practical Exam\n");
+
+        // Get 10 integer values from the user and store them in an array or a
+        // List
+        List<int> numbers = new List<int>();
+
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Write("Please enter an integer value: ");
+            string? val = Console.ReadLine();
+            numbers.Add(Convert.ToInt32(val));
+        }
     }
 }
