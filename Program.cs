@@ -53,7 +53,7 @@ public class Program
     {
         int smallest = 0;
 
-        foreach (var number in numbers)
+        foreach (int number in numbers)
         {
             if (smallest == 0)
             {
@@ -74,7 +74,7 @@ public class Program
     {
         int largest = 0;
 
-        foreach (var number in numbers)
+        foreach (int number in numbers)
         {
             if (largest == 0)
             {
