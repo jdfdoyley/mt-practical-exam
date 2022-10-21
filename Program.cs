@@ -19,6 +19,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        // Code here...
+        // Print a header line
+        Console.WriteLine("\nJason D'Oyley - Midterm Practical Exam\n");
     }
 }
